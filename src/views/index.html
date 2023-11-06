@@ -1,0 +1,51 @@
+<% var data = {
+title: "Фабрика картона",
+route: "/"
+}; %>
+
+<%= _.template(require('./../includes/head.html').default)(data) %>
+
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+
+<section class="entry-main-page">
+    <div class="hero">
+        <div class="hero__text">
+            <h1>Панели  из сотового картона</h1>
+            <p>Уникальный  экологически чистый материал  с широкой областью применения</p>
+        </div>
+        <div class="hero__buttons">
+            <div>
+                <a class="btn btn_type_secondary" role="button">Каталог продукции</a>
+                <span class="nowrap">— От 10 руб/м²</span>
+            </div>
+            <div>
+                <a class="btn btn_type_secondary" href="" role="button">Применение</a>
+            </div>
+        </div>
+    </div>
+    <div class="entry-picture">
+        <!-- :before — блок с паттерном сот -->
+        <img class="entry-picture__image" src="/uploads/panel-photo.webp" width="540" height="283" alt="Панель из сотового картона">
+        <!-- :after — блок с тенью -->
+    </div>
+    <div class="entry-form">
+        <h3>Оставьте заявку  и мы ответим на ваши вопросы</h3>
+        <form class="form" action="">
+            <div class="form__control">
+                <input class="input" name="name" type="text" placeholder="Ваше имя">
+                <!-- <small>Текст ошибки</small> -->
+            </div>
+            <div class="form__control">
+                <input class="input" name="email" type="text" placeholder="Телефон или email">
+                <!-- <small>Текст ошибки</small> -->
+            </div>
+            <button class="btn btn_type_primary" type="submit">Отправить</button>
+            <p class="form__agreement">Нажимая кнопку, вы соглашаетесь с <a href="">правилами обработки</a> персональных данных.</p>
+        </form>
+    </div>
+</section>
+
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
