@@ -3,13 +3,11 @@
   justify-content: center;
   align-items: center;
   font-size: 20px;
-  //font-weight: $weight-normal;
   height: 52px;
   padding: 0 24px;
   text-decoration: none;
   transition: .1s ease-in-out;
   cursor: pointer;
-  //text-decoration: none!important;
   &:disabled {
     opacity: .5;
     cursor: default;

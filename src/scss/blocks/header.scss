@@ -79,7 +79,6 @@
   &__contacts-wrap {
     @include xl {
       display: flex;
-      //height: 48px;
       overflow: hidden;
       transition: opacity .15s .15s ease-in-out;
     }
@@ -160,10 +159,6 @@
       }
       &:before {
         content: '';
-        //position: absolute;
-      }
-      span {
-        //position: absolute;
       }
       &:after {
         content: '';

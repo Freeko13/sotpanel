@@ -1,5 +1,4 @@
 .entry {
-  //margin-bottom: 8px;
   @include md {
     display: grid;
     grid-template-columns: 1fr 240px;
