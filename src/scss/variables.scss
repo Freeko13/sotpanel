@@ -1,18 +1,22 @@
 // Переменные и т.п.
 
-
-$breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px,
-  xxxl: 1900px
-);
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1484px;
+$breakpoint-xxxl: 1860px;
 
 $color-black: #000;
 $color-white: #fff;
+$color-text: #0D1629;
+$color-blue-primary: #15425C;
+$color-blue-primary-hover: #295D7B;
+$color-blue-primary-active: #34769C;
+$color-blue-bg: #EFF7FC;
+$color-brown-primary: #8E5B34;
+$color-brown-secondary: #DAB07E;
+$color-brown-bg: #FAF7F0;
 
-
-
+$weight-normal: 400;
+$weight-bold: 600;

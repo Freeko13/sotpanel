@@ -8,43 +8,47 @@ route: "/"
 <%= _.template(require('./../includes/header.html').default)(data) %>
 
 
-<section class="entry-main-page">
-    <div class="hero">
-        <div class="hero__text">
-            <h1>Панели  из сотового картона</h1>
-            <p>Уникальный  экологически чистый материал  с широкой областью применения</p>
+<section class="entry">
+
+    <div class="entry__picture entry__animation_show">
+        <!-- :before — блок с паттерном сот -->
+        <img class="entry__image" id="panel-photo" src="https://sotpanel.alexkoteliuk.ru/uploads/uploads/panel-photo.webp" width="540" height="283" alt="Панель из сотового картона">
+        <!-- :after — блок с тенью -->
+    </div>
+    <div class="hero entry__hero">
+        <div class="hero__text entry__hero-text">
+            <h1>Панели <br>из сотового картона</h1>
+            <p>Уникальный экологически чистый материал с широкой областью применения</p>
         </div>
-        <div class="hero__buttons">
+        <div class="hero__buttons entry__hero-buttons">
             <div>
                 <a class="btn btn_type_secondary" role="button">Каталог продукции</a>
                 <span class="nowrap">— От 10 руб/м²</span>
             </div>
             <div>
-                <a class="btn btn_type_secondary" href="" role="button">Применение</a>
+                <a class="btn btn_type_secondary " role="button">Применение</a>
             </div>
         </div>
     </div>
-    <div class="entry-picture">
-        <!-- :before — блок с паттерном сот -->
-        <img class="entry-picture__image" src="/uploads/panel-photo.webp" width="540" height="283" alt="Панель из сотового картона">
-        <!-- :after — блок с тенью -->
-    </div>
-    <div class="entry-form">
-        <h3>Оставьте заявку  и мы ответим на ваши вопросы</h3>
+    <div class="entry__form">
+        <h2>Оставьте заявку <br>и мы ответим на ваши вопросы</h2>
         <form class="form" action="">
-            <div class="form__control">
+            <div class="form__control entry__form-input">
                 <input class="input" name="name" type="text" placeholder="Ваше имя">
                 <!-- <small>Текст ошибки</small> -->
             </div>
-            <div class="form__control">
+            <div class="form__control entry__form-input">
                 <input class="input" name="email" type="text" placeholder="Телефон или email">
                 <!-- <small>Текст ошибки</small> -->
             </div>
             <button class="btn btn_type_primary" type="submit">Отправить</button>
-            <p class="form__agreement">Нажимая кнопку, вы соглашаетесь с <a href="">правилами обработки</a> персональных данных.</p>
         </form>
+        <p class="entry__form_agreement">Нажимая кнопку, вы соглашаетесь с <a href="">правилами обработки</a> персональных данных.</p>
     </div>
 </section>
+
+<section class="second"></section>
+
 
 
 

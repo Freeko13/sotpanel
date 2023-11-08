@@ -54,7 +54,7 @@ const config = {
     devtool: "source-map",
     mode: "production",
     devServer: {
-        liveReload: false,
+        liveReload: true,
     },
     optimization: {
         minimize: true,
@@ -96,9 +96,21 @@ const config = {
                         options: {
                             sourceMap: true,
                         },
-                    },
+                    }
                 ],
             },
+            /*{
+                test: /\.font\.js/,
+                include: path.resolve(__dirname, "src/font"),
+                use: [
+                    {
+                        loader: "webfonts-loader",
+                        options: {
+                            publicPath: 'src/fonts'
+                        }
+                    }
+                ]
+            },*/
             {
                 test: /\.html$/,
                 include: path.resolve(__dirname, "src/includes"),
@@ -113,11 +125,11 @@ const config = {
         }),
         new CopyPlugin({
             patterns: [
-                /*{
+                {
                     from: "./src/fonts",
                     to: "./fonts",
                     noErrorOnMissing: true
-                },*/
+                },
                 {
                     from: "./src/favicon",
                     to: "./favicon",
@@ -129,7 +141,7 @@ const config = {
                     noErrorOnMissing: true
                 },
                 {
-                    from: "uploads/**/*",
+                    from: "uploads",
                     to:"./uploads",
                     noErrorOnMissing: true
                 },

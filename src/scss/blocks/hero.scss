@@ -1,0 +1,26 @@
+.hero {
+  display: grid;
+  gap: 40px;
+  &__text {
+    display: grid;
+    gap: 24px;
+    z-index: 1;
+    h1 {
+      margin-left: -2px;
+      font-size: 40px;
+      font-weight: $weight-bold;
+      line-height: 1.15;
+    }
+  }
+  &__buttons {
+    display: grid;
+    gap: 28px;
+    z-index: 1;
+    > div {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 16px 24px;
+    }
+  }
+}

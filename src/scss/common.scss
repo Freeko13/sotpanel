@@ -1,5 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
+html {
+  overflow-x: hidden;
+}
 body {
+  overflow-x: hidden;
+  padding-top: 92px;
   font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: $color-text;
+  @include xl {
+    padding-top: 100px;
+  }
+  @include xxl {
+    padding-top: 108px;
+  }
+  @include xxxl {
+    padding-top: 60px;
+  }
+}
+section {
+  margin: 8px;
+  @include md {
+    margin: 24px;
+  }
+  @include xxl {
+    max-width: 1420px;
+    margin: 0 auto;
+  }
+}
+a {
+  //text-decoration: none;
+  color: $color-blue-primary-active;
+  &:hover {
+    //text-decoration: underline;
+    opacity: .8;
+  }
+  &:active {
+    opacity: .6;
+  }
+}
+.nowrap {
+  white-space: nowrap;
 }

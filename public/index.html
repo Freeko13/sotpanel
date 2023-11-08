@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" class="h-100">
+<html lang="ru">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
@@ -12,53 +12,88 @@
     <link rel="stylesheet" href="/css/bundle.css" />
   </head>
 
-  <header сlass="header">Хедер</header>
-
-  <section class="entry-main-page">
-    <div class="hero">
-      <div class="hero__text">
-        <h1>Панели  из сотового картона</h1>
-        <p>Уникальный  экологически чистый материал  с широкой областью применения</p>
-      </div>
-      <div class="hero__buttons">
-        <div>
-          <a class="btn btn_type_secondary" role="button">Каталог продукции</a>
-          <span class="nowrap">— От 10 руб/м²</span>
-        </div>
-        <div>
-          <a class="btn btn_type_secondary" href="" role="button">Применение</a>
+  <header class="header">
+    <div class="header__wrap">
+      <a class="header__logo" href="/">
+        <img src="/img/logo-icon.svg" alt="Фабрика картона" />
+        <span class="nowrap">Фабрика картона</span>
+      </a>
+      <div class="header__toggle-menu">
+        <ul class="header__menu">
+          <li class="menu-item"><a>Каталог продукции</a></li>
+          <li class="menu-item"><a>Применение</a></li>
+          <li class="menu-item"><a>Галерея</a></li>
+          <li class="menu-item"><a>О фабрике</a></li>
+          <li class="menu-item"><a>Контакты</a></li>
+        </ul>
+        <div class="header__contacts-wrap">
+          <ul class="header__contacts">
+            <li class="menu-item"><a>info@sotpanel.by</a></li>
+            <li class="menu-item"><a>+375 29 805 35 25</a></li>
+          </ul>
+          <ul class="header__messengers">
+            <li class="menu-item menu-item_type_icon"><a class="icon-viber"></a></li>
+            <li class="menu-item menu-item_type_icon"><a class="icon-Whatsapp"></a></li>
+          </ul>
         </div>
       </div>
     </div>
-    <div class="entry-picture">
+    <button class="header__btn-burger" type="button">
+      <div>
+        <span></span>
+      </div>
+    </button>
+    <div class="header__backdrop"></div>
+  </header>
+
+  <section class="entry">
+    <div class="entry__picture entry__animation_show">
       <!-- :before — блок с паттерном сот -->
       <img
-        class="entry-picture__image"
-        src="/uploads/panel-photo.webp"
+        class="entry__image"
+        id="panel-photo"
+        src="https://sotpanel.alexkoteliuk.ru/uploads/uploads/panel-photo.webp"
         width="540"
         height="283"
         alt="Панель из сотового картона"
       />
       <!-- :after — блок с тенью -->
     </div>
-    <div class="entry-form">
-      <h3>Оставьте заявку  и мы ответим на ваши вопросы</h3>
+    <div class="hero entry__hero">
+      <div class="hero__text entry__hero-text">
+        <h1>Панели <br />из сотового картона</h1>
+        <p>Уникальный экологически чистый материал с широкой областью применения</p>
+      </div>
+      <div class="hero__buttons entry__hero-buttons">
+        <div>
+          <a class="btn btn_type_secondary" role="button">Каталог продукции</a>
+          <span class="nowrap">— От 10 руб/м²</span>
+        </div>
+        <div>
+          <a class="btn btn_type_secondary" role="button">Применение</a>
+        </div>
+      </div>
+    </div>
+    <div class="entry__form">
+      <h2>Оставьте заявку <br />и мы ответим на ваши вопросы</h2>
       <form class="form" action="">
-        <div class="form__control">
+        <div class="form__control entry__form-input">
           <input class="input" name="name" type="text" placeholder="Ваше имя" />
           <!-- <small>Текст ошибки</small> -->
         </div>
-        <div class="form__control">
+        <div class="form__control entry__form-input">
           <input class="input" name="email" type="text" placeholder="Телефон или email" />
           <!-- <small>Текст ошибки</small> -->
         </div>
         <button class="btn btn_type_primary" type="submit">Отправить</button>
-        <p class="form__agreement">
-          Нажимая кнопку, вы соглашаетесь с <a href="">правилами обработки</a> персональных данных.
-        </p>
       </form>
+      <p class="entry__form_agreement">
+        Нажимая кнопку, вы соглашаетесь с <a href="">правилами обработки</a> персональных данных.
+      </p>
     </div>
   </section>
+
+  <section class="second"></section>
 
   <script src="/js/bundle.js"></script>
 </html>
